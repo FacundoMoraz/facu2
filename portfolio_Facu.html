@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Portafolio</title>
+    <style>
+        /* Estilos para dar formato al contenido */
+        .contenido {
+            display: none;
+        }
+
+        input[type="checkbox"] {
+            display: none;
+        }
+
+        input[type="checkbox"]:checked~.contenido {
+            display: block;
+        }
+
+        label {
+            cursor: pointer;
+            color: blue;
+        }
+
+        /* Estilos para las barras laterales verdes */
+        .proyectos {
+            padding: 10px;
+            background-color: lightgray;
+            border-left: 5px solid green;
+            border-right: 5px solid green;
+        }
+
+        .proyectos ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .proyecto {
+            margin-bottom: 10px;
+        }
+
+        .proyecto .titulo {
+            background-color: green;
+            color: white;
+            padding: 5px;
+            cursor: pointer;
+            margin: 0;
+        }
+
+        .proyecto .contenido {
+            display: none;
+            padding: 5px;
+            background-color: white;
+        }
+
+        .proyecto .contenido p {
+            margin: 0;
+        }
+
+        .proyecto input[type="checkbox"]:checked~.contenido {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <center>
+            <!-- imagen y el título -->
+            <img src="img/CoDGhost.jpg" width="1250" height="586" alt="Logo">
+            <h1 style="color: crimson; font-size: 300;"><strong>
+                    </style:colo> Mi primer Portfolio</h1></strong>
+        </center>
+    </header>
+
+    <main>
+
+        <section>
+            <center>
+                <!-- foto de perfil -->
+                <img src="img/Yo2022.jpg" height="200" width="220" alt="Foto de perfil">
+                <!--  breve descripción  -->
+                <h2 style="font-size: 35; color: rgb(62, 55, 124);">Hola, soy Facundo Moráz.</h2>
+
+                <h2 style="font-size: 30; color: rgb(62, 55, 124);">El flaco de acá arriba, no soy muy fotgenico lo sé.
+                </h2>
+                <p style="font-size: 25px; color: rgb(62, 55, 124);"> empesando a programar no me quemen tanto.</p>
+                <img src="img/programo.gif" height="200" width="200"> </img>
+            </center>
+        </section>
+
+        <section class="proyectos">
+            <h2>Proyectos</h2>
+            <ul>
+                <li class="proyecto">
+                    <input type="checkbox" id="proyecto1">
+                    <label class="titulo" for="proyecto1">Cosas que me gustan</label>
+                    <div class="contenido">
+                        <p>Me gusta ver anime (principalmente isekais, romances y de venganzas.), ver series de mi
+                            infancia, ver peliculas (especificamente de terror) y
+                            reirme de sus errores, ver videos de youtube, inventar historias para
+                            personajes, inventar personajes dibujar (cada tanto), ver dibujos de otras personas, jugar a
+                            videojuegos principalmente aquellos que no son competitivos o en otras palabras jugos
+                            casuales no los hiper casuales, escuchar musica (de cualquier tipo), escuchar raps de
+                            videojuegos, cocinar, leer mangas, muy aveces leo libros, arreglar cosas
+                            que sepa como arreglar claro y imaginar situaciones, juegos, historias, etc.</p>
+                    </div>
+                </li>
+                <li class="proyecto">
+                    <input type="checkbox" id="proyecto2">
+                    <label class="titulo" for="proyecto2">Mis pasatiempos</label>
+                    <div class="contenido">
+                        <p>Suelo jugar videojuegos, ver algo en internet y dibujar lo que me pinte en el momento.</p>
+                    </div>
+                </li>
+                <li class="proyecto">
+                    <input type="checkbox" id="proyecto3">
+                    <label class="titulo" for="proyecto3">Sobre mí</label>
+                    <div class="contenido">
+                        <p>Yo nací acá en Rafaela, vivo en la casa de mis viejo esperando mientras estudio en la Unraf,
+                            estudié en la escuela Villa Rosas N°478 del barrio del mismo nombre luego en la secundaria
+                            Mario Vecchioli N°429, elegí la carrera porque en el momento dije "ya ta elijo esta de
+                            videojuegos porque me gustan" aparte ya estaba medio podrido de jugar siempre lo mismo y
+                            tenia(y tengo) en la cabeza hacer mis propios jugos con sus historias y lore.</p>
+                    </div>
+                </li>
+                <li class="proyecto">
+                    <input type="checkbox" id="proyecto4">
+                    <label class="titulo" for="proyecto4">Soy fan de...</label>
+                    <div class="contenido">
+                        <p>Soy fan de ZellenDust, Vegetta777, Naoya Matsumoto (mangaka de kaiju N°8), de Eminem, ZarKort
+                            (por sus canciones), KeyBlade y Kronno Zomber. </p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+</body>
+
+</html>
